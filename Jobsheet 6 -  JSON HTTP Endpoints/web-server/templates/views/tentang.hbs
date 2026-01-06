@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{> head}}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+<body>
+    <div class="main-content">
+        {{> header}}
+
+        <section class="about-section">
+            <div class="container">
+
+                <div class="profile-wrapper">
+                    <div class="profile-image-container">
+                        <img
+                            src="/img/saya.png"
+                            alt="Foto Pengembang"
+                            class="profile-img"
+                        >
+                        <div class="decorative-blob"></div>
+                    </div>
+
+                    <div class="profile-content">
+                        <span class="badge">Tentang Pengembang</span>
+
+                        <h1 class="name">Andri Saputra</h1>
+                        <h2 class="role">Pengembang Aplikasi Cek Cuaca</h2>
+
+                        <p class="bio">
+                            Halo! Saya Andri, seorang pengembang web yang memiliki
+                            ketertarikan mendalam pada ekosistem JavaScript. Saya senang
+                            bereksperimen dengan <strong>Node.js</strong>,
+                            <strong>Express</strong>, dan integrasi <strong>API</strong>
+                            untuk menciptakan solusi digital yang bermanfaat.
+                        </p>
+
+                        <p class="bio-secondary">
+                            Aplikasi ini dibuat untuk memudahkan pengguna mengetahui
+                            kondisi cuaca secara <em>real-time</em> di berbagai lokasi
+                            dengan data yang akurat.
+                        </p>
+
+                        <div class="social-links">
+                            <a
+                                href="mailto:andri.saputra0865@gmail.com"
+                                class="btn-primary"
+                            >
+                                Hubungi Saya
+                            </a>
+
+                            <a
+                                href="https://github.com/AndriSaputra1202"
+                                target="_blank"
+                                class="btn-outline"
+                            >
+                                Lihat GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Tujuan Aplikasi</h3>
+                        <p>
+                            Menyediakan prediksi cuaca yang akurat dan cepat dengan
+                            antarmuka yang sederhana, bersih, dan memanjakan mata
+                            pengguna.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="card-icon">💻</div>
+                        <h3>Teknologi</h3>
+                        <ul class="tech-list">
+                            <li>Node.js + Express</li>
+                            <li>Handlebars (HBS)</li>
+                            <li>API WeatherStack & Nominatim</li>
+                            <li>CSS3 Modern Layout</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="card-icon">📬</div>
+                        <h3>Tetap Terhubung</h3>
+                        <p>
+                            Punya saran atau pertanyaan? Jangan ragu untuk mengirim
+                            email atau berkontribusi pada repositori proyek ini.
+                        </p>
+                        <a
+                            href="mailto:andri.saputra0865@gmail.com"
+                            class="card-link"
+                        >
+                            Kirim Email &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    {{> footer}}
+</body>
+</html>

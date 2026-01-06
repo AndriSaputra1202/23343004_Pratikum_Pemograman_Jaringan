@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{> head}}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+<body>
+    <div class="main-content">
+        {{> header}}
+
+        <section class="faq-section">
+            <div class="faq-container">
+
+                <div class="faq-header">
+                    <span class="faq-badge">Pusat Bantuan</span>
+                    <h1 class="faq-title">Pertanyaan yang Sering Diajukan</h1>
+                    <p class="faq-subtitle">
+                        Cari tahu jawaban atas pertanyaan umum seputar penggunaan
+                        aplikasi Cek Cuaca.
+                    </p>
+                </div>
+
+                <div class="faq-list">
+
+                    <div class="faq-item">
+                        <div class="faq-question-wrapper">
+                            <span class="faq-icon">❓</span>
+                            <h3 class="faq-question">
+                                Apa tujuan dari aplikasi ini?
+                            </h3>
+                        </div>
+                        <p class="faq-answer">
+                            Aplikasi ini bertujuan untuk memberikan informasi cuaca
+                            secara cepat, akurat, dan mudah dipahami kepada pengguna
+                            di berbagai lokasi.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question-wrapper">
+                            <span class="faq-icon">🔍</span>
+                            <h3 class="faq-question">
+                                Bagaimana cara menggunakan aplikasi?
+                            </h3>
+                        </div>
+                        <p class="faq-answer">
+                            Cukup masukkan nama kota pada kolom pencarian di halaman
+                            utama, lalu klik tombol cari. Sistem akan menampilkan
+                            kondisi cuaca terkini dari lokasi tersebut.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question-wrapper">
+                            <span class="faq-icon">💰</span>
+                            <h3 class="faq-question">
+                                Apakah aplikasi ini gratis?
+                            </h3>
+                        </div>
+                        <p class="faq-answer">
+                            Ya, aplikasi ini sepenuhnya gratis dan dapat digunakan
+                            oleh siapa saja untuk kebutuhan informasi cuaca harian.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question-wrapper">
+                            <span class="faq-icon">📡</span>
+                            <h3 class="faq-question">
+                                Dari mana data cuaca diambil?
+                            </h3>
+                        </div>
+                        <p class="faq-answer">
+                            Data diambil secara langsung dari API
+                            <strong>Weatherstack</strong> dan
+                            <strong>Nominatim</strong> yang memberikan pembaruan data
+                            cuaca dan lokasi secara real-time.
+                        </p>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question-wrapper">
+                            <span class="faq-icon">👨‍💻</span>
+                            <h3 class="faq-question">
+                                Siapa pengembang aplikasi ini?
+                            </h3>
+                        </div>
+                        <p class="faq-answer">
+                            Aplikasi ini dikembangkan oleh
+                            <strong>{{nama}}</strong> sebagai proyek implementasi
+                            pemrograman web menggunakan Node.js dan Express.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    {{> footer}}
+</body>
+</html>
