@@ -26,7 +26,7 @@ Berikut hasil analisis tampilan console saat aplikasi chat berjalan.
 | Output Console                                                         | Penyebab                                                                                     | Bagian Kode Terkait                                                                       |
 | :--------------------------------------------------------------------- | :------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
 | **Objek Pesan Admin**<br>`{username: "Admin", text: "Selamat datang!", ...}` | Client menerima event pesan sambutan dari server dan menampilkannya di console.              | `socket.on("pesan", (message) => { console.log(message); })`                              |
-| **Objek Pesan Pengguna**<br>`{username: "randi", text: "test", ...}`  | Server mendistribusikan pesan ke semua client dalam room, kemudian client mencetaknya.       | `socket.on("pesan", (message) => { console.log(message); })`                              |
+| **Objek Pesan Pengguna**<br>`{username: "Andri", text: "Halo syadza", ...}`  | Server mendistribusikan pesan ke semua client dalam room, kemudian client mencetaknya.       | `socket.on("pesan", (message) => { console.log(message); })`                              |
 | **Konfirmasi**<br>`"Pesan berhasil dikirim"`                           | Callback dari event `kirimPesan` dijalankan setelah server memproses dan menyebarkan pesan. | `socket.emit("kirimPesan", pesan, (error) => { console.log("Pesan berhasil dikirim"); })` |
 
 **Rangkaian Proses:**
